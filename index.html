@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="appG">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title></title>
+  </head>
+  <body>
+    <div class='header'>
+      <button ui-sref="home">Home</button>
+      <button ui-sref="roster">Roster</button>
+      <button ui-sref="calander">Calander</button>
+    </div>
+
+	<ui-view></ui-view>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js">
+  </script>
+  <script src='app.js'></script>
+  <script src='./calander/calanderCtrl.js'></script>
+  <script src='./roster/rosterCtrl.js'></script>
+  <script src='./home/homeCtrl.js'></script>
+  <script src='service.js'></script>
+  </body>
+</html>
